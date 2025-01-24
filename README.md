@@ -9,5 +9,5 @@ select your food from food management and books your table. Then your bill is re
 2. pymysql
 3. sys
 # Features
-. reserve available table
-. show the price
+1. reserve available table
+2. show the price
