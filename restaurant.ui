@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>906</width>
+    <height>735</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+   color: brown; background-color: gray; /* Soft light-blue background for a modern look */
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>781</width>
+      <height>37</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    color: #000; /* Black text for headers */
+    font-size: 14px;
+    font-weight: bold;
+    margin: 5px 0;
+}</string>
+    </property>
+    <layout class="QHBoxLayout" name="top_layout">
+     <item>
+      <widget class="QLabel" name="menu_label">
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: red; /* Deep navy for readability */
+    font-size: 14px;
+    font-weight: bold;
+    margin: 8px 0;
+}</string>
+       </property>
+       <property name="text">
+        <string>Menu Management</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QTableWidget" name="menu_table">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>782</width>
+      <height>236</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTableWidget {
+    border: 1px solid #bdc3c7; /* Soft gray border */
+    background-color: #ffffff; /* White background for tables */
+    gridline-color: #ecf0f1; /* Light gray gridlines */
+    font-size: 14px;
+    border-radius: 6px;
+    padding: 4px;
+}
+
+QHeaderView::section {
+    background-color: #3498db; /* Soft blue header background */
+    color: white; /* White text for table headers */
+    font-size: 14px;
+    padding: 6px;
+    border: none;
+    border-radius: 3px;
+}</string>
+    </property>
+    <column>
+     <property name="text">
+      <string>Dish Name</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Price</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Category</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QTableWidget" name="table_table">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>320</y>
+      <width>781</width>
+      <height>211</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTableWidget {
+    border: 1px solid #bdc3c7; /* Soft gray border */
+    background-color: #ffffff; /* White background for tables */
+    gridline-color: #ecf0f1; /* Light gray gridlines */
+    font-size: 14px;
+    border-radius: 6px;
+    padding: 4px;
+}
+
+QHeaderView::section {
+    background-color: #3498db; /* Soft blue header background */
+    color: white; /* White text for table headers */
+    font-size: 14px;
+    padding: 6px;
+    border: none;
+    border-radius: 3px;
+}</string>
+    </property>
+    <column>
+     <property name="text">
+      <string>Table Number</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Status</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Action</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QWidget" name="layoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>540</y>
+      <width>781</width>
+      <height>37</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    color: #2c3e50; /* Deep navy for readability */
+    font-size: 16px;
+    font-weight: bold;
+    margin: 8px 0;
+}
+</string>
+    </property>
+    <layout class="QHBoxLayout" name="bottom_layout_2">
+     <item>
+      <widget class="QLabel" name="order_label_2">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: red; /* Deep navy for readability */
+    font-size: 14px;
+    font-weight: bold;
+    margin: 8px 0;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Order Management</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="checkout_label_2">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: red; /* Deep navy for readability */
+    font-size: 14px;
+    font-weight: bold;
+    margin: 8px 0;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Checkout</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>580</y>
+      <width>781</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="order_layout">
+     <item>
+      <widget class="QComboBox" name="dish_combo">
+       <property name="styleSheet">
+        <string notr="true">font: 45 12pt &quot;Arial&quot;; color: rgb(255, 255, 255); background-color: rgb(50, 50, 50);; border-radius: 6p; padding: 6px 14px;
+</string>
+       </property>
+       <property name="locale">
+        <locale language="Persian" country="Iran"/>
+       </property>
+       <property name="currentText">
+        <string notr="true">پیتزا</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>پیتزا</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>سالاد</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>نوشابه</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="quantity_input">
+       <property name="styleSheet">
+        <string notr="true">QLineEdit, QSpinBox {
+    border: 1px solid #bdc3c7; /* Soft gray border */
+    border-radius: 6px;
+    padding: 6px;
+    font-size: 14px;
+    background-color: #ffffff; /* White background */
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.1); /* Subtle inner shadow */
+}
+
+QLineEdit:focus, QSpinBox:focus {
+    border: 1px solid #3498db; /* Blue border on focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.4); /* Soft glow effect */
+}
+
+QStatusBar {
+    background-color: #ecf0f1; /* Light gray background for status bar */
+    color: #2c3e50; /* Deep navy text for status bar */
+    font-size: 12px;
+}
+
+QScrollBar:horizontal, QScrollBar:vertical {
+    border: none;
+    background: #ecf0f1; /* Light gray background for scrollbars */
+    height: 12px;
+    margin: 0px;
+    border-radius: 6px;
+}
+
+QScrollBar::handle:horizontal, QScrollBar::handle:vertical {
+    background: #3498db; /* Blue scroll handle */
+    min-width: 20px;
+    min-height: 20px;
+    border-radius: 6px;
+}
+
+QScrollBar::handle:hover {
+    background: #2980b9; /* Darker blue on hover */
+}
+</string>
+       </property>
+       <property name="placeholderText">
+        <string>Quantity</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="order_button">
+       <property name="styleSheet">
+        <string notr="true">
+QPushButton {
+    background-color: #1abc9c; /* Teal button background */
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+QPushButton:hover {
+    background-color: #16a085; /* Slightly darker teal for hover effect */
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+QPushButton:disabled {
+    background-color: #dcdcdc; /* Light gray for disabled buttons */
+    color: #7a7a7a; /* Lighter gray text */
+    box-shadow: none;
+}</string>
+       </property>
+       <property name="text">
+        <string>Place Order</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>620</y>
+      <width>781</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="checkout_layout">
+     <item>
+      <widget class="QLabel" name="total_label">
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: #2c3e50; /* Deep navy for readability */
+    font-size: 16px;
+    font-weight: bold;
+    margin: 8px 0;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Total: تومان 0.00</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="checkout_button">
+       <property name="styleSheet">
+        <string notr="true">
+QPushButton {
+    background-color: #1abc9c; /* Teal button background */
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+QPushButton:hover {
+    background-color: #16a085; /* Slightly darker teal for hover effect */
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+QPushButton:disabled {
+    background-color: #dcdcdc; /* Light gray for disabled buttons */
+    color: #7a7a7a; /* Lighter gray text */
+    box-shadow: none;
+}</string>
+       </property>
+       <property name="text">
+        <string>Checkout</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="table_label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>280</y>
+      <width>221</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    color: red; /* Deep navy for readability */
+    font-size: 14px;
+    font-weight: bold;
+    margin: 8px 0;
+}</string>
+    </property>
+    <property name="text">
+     <string>Table Management</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>906</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
